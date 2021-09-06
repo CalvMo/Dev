@@ -10,7 +10,7 @@ from email.mime.text import MIMEText
 from email.mime.base import MIMEBase 
 from email import encoders
 
-aio = Client("","")
+aio = Client("PJD301B","71e3142568204ec1bfc015345edc30b2")
 
 currentFan = 0
 currentMotionSensor = 0
