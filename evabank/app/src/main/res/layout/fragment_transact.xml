@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <Button
+        android:id="@+id/btn_transact"
+        android:layout_width="195dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/reg_btn_style"
+        android:text="@string/complete_transaction"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/transAccount"
+        app:layout_constraintStart_toStartOf="@+id/transAccount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/trans_amount"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/txt_IncompletePWD"
+        app:layout_constraintStart_toStartOf="@+id/txt_IncompletePWD" />
+
+    <TextView
+        android:id="@+id/txt_IncompletePWD"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/reg_edittext_style"
+        android:text="@string/authkey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_completepwd"
+        app:layout_constraintStart_toStartOf="@+id/txt_completepwd" />
+
+    <EditText
+        android:id="@+id/txt_completepwd"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="@string/fill_in_missing_characters"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_transact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/transAccount"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/reg_edittext_style"
+        android:ems="10"
+        android:hint="Account"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/trans_amount"
+        app:layout_constraintStart_toStartOf="@+id/trans_amount"
+        app:layout_constraintTop_toBottomOf="@+id/spinner1"
+        app:layout_constraintVertical_bias="0.64" />
+
+    <TextView
+        android:id="@+id/text_transbalance"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/reg_edittext_style"
+        android:text="@string/balance"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/textTransRand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner1"
+        app:layout_constraintEnd_toStartOf="@+id/text_transbalance"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+
+</android.support.constraint.ConstraintLayout>

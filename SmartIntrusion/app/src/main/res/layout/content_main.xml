@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/btn_servo_left"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btn_Left"
+        android:layout_alignParentStart="true"
+        android:text="Servo Left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_servo_right"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/txt_backward"
+        android:layout_marginBottom="-4dp"
+        android:text="Servo Right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/btn_Forward"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/smallforwardtransparent" />
+
+    <Button
+        android:id="@+id/btn_Left"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:layout_above="@+id/btn_servo_right"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="-4dp"
+        android:background="@drawable/leftsmalltransparent"
+        android:text="         Left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_Right"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="68dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="97dp"
+        android:background="@drawable/smallrightransparent"
+        android:text="Right        "
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_Reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/btn_stop"
+        android:layout_alignStart="@+id/btn_Forward"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/smallreversetransparent" />
+
+    <Button
+        android:id="@+id/btn_servo_Down"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/txt_forward"
+        android:layout_alignParentStart="true"
+        android:text="Deactivate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_Servo_Up"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btn_servo_Down"
+        android:layout_alignParentStart="true"
+        android:text="Activate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="331dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="321dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btn_servo_left"
+            android:layout_marginTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </WebView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_backward"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_Reverse"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="66dp"
+        android:text="Down"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/txt_forward"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_Forward"
+        android:layout_alignBottom="@+id/btn_Forward"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="-2dp"
+        android:text="Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_alignTop="@+id/btn_Left"
+        android:layout_alignEnd="@+id/btn_Forward"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/robbotsmall" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button2"
+        android:background="?android:attr/listDivider"
+        tools:ignore="UnknownId" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_Servo_Up"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/btn_googleMaps"
+        android:layout_width="36dp"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-51dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/btn_Forward"
+        android:background="@drawable/googlemaps"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

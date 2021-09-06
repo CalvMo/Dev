@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/btn_servo_left"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/btn_Left"
+        android:layout_alignParentStart="true"
+        android:text="Camera Left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_servo_right"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/txt_backward"
+        android:layout_marginBottom="-4dp"
+        android:text="Camera Right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+
+    <Button
+        android:id="@+id/btn_Forward"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="186dp"
+        android:background="@drawable/smallforwardtransparent" />
+
+    <Button
+        android:id="@+id/btn_Left"
+        android:layout_width="57dp"
+        android:layout_height="61dp"
+        android:layout_above="@+id/btn_servo_right"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/leftsmalltransparent"
+        android:text="         Left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_Right"
+        style="@android:style/Widget.DeviceDefault.Button"
+        android:layout_width="57dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="106dp"
+        android:background="@drawable/smallrightransparent"
+        android:text="Right        "
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_Reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/btn_stop"
+        android:layout_alignStart="@+id/btn_Forward"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/smallreversetransparent" />
+
+    <Button
+        android:id="@+id/btn_servo_Down"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/txt_forward"
+        android:layout_alignParentStart="true"
+        android:text="Camera Down"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_Servo_Up"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btn_servo_Down"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="2dp"
+        android:text="Camera Up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <WebView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="490dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </WebView>
+
+    <TextView
+        android:id="@+id/txt_backward"
+        android:layout_width="86dp"
+        android:layout_height="28dp"
+        android:layout_alignStart="@+id/btn_Reverse"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="63dp"
+        android:text="Reverse"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <TextView
+        android:id="@+id/txt_forward"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_Forward"
+        android:layout_alignBottom="@+id/btn_Forward"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-4dp"
+        android:text="       Forward"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_alignTop="@+id/btn_Left"
+        android:layout_alignEnd="@+id/btn_Forward"
+        android:layout_marginTop="-13dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/robbotsmall" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_Servo_Up"
+        android:background="?android:attr/listDivider" />
+
+    <Button
+        android:id="@+id/btn_googleMaps"
+        android:layout_width="36dp"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-51dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/btn_Forward"
+        android:background="@drawable/googlemaps"
+        android:enabled="false" />
+
+
+</RelativeLayout>

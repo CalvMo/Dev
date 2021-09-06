@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">HomeApp</string>
+    <string name="go">Go</string>
+    <string name="home">Home</string>
+    <string name="explore">Explore</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="buy_electricity">Buy Electricity</string>
+    <string name="balance">1000</string>
+    <string name="buy_prepaid_mobile">Buy Prepaid mobile</string>
+    <string name="pay_beneficiary">Pay Beneficiary</string>
+    <string name="send_cash">Send Cash</string>
+    <string name="pin">Pin</string>
+    <string name="confirm_pin">Confirm Pin</string>
+    <string name="name">Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="id_number">Id Number</string>
+    <string name="register">Register</string>
+    <string name="auth_password">Auth Password</string>
+    <string name="confirm_auth_password">Confirm Auth Password</string>
+    <string name="transact">Transact</string>
+    <string name="rand">R</string>
+    <string name="complete_transaction">Complete Transaction</string>
+    <string name="fill_in_missing_characters">Fill in missing characters</string>
+    <string name="authkey">Authkey</string>
+    <string-array name="transaction_type">
+        <item>Electricity</item>
+        <item>Prepaid</item>
+        <item>Payment</item>
+        <item>Send Cash</item>
+
+    </string-array>
+</resources>
